@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projetos Javascript</title>
+
+    <!-- estilização -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="all">
 </head>
 
 <body>
+    <form action="#" id="comentarios_form" method="post">
+        <fieldset>
+            <legend>Seus dados de contato</legend>
+            <p>
+                <label for="autor">Nome: <em class="required">(Required)</em></label>
+                <input type="text" name="autor" id="autor">
+            </p>
+            <p>
+                <label for="email">Endereço de E-mail:</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p>
+                <label for="pass">Senha: </label>
+                <input type="password" name="senha" id="senha">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Comentários</legend>
+            <p>
+                <label for="text">Mensagem: <em class="required">(Required)</em></label>
+                <textarea name="texto" id="texto" cols="20" rows="10"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="button" value="Enviar" id="btnSubmit">
+        </p>
+    </form>
 
+    <!-- scripts -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
